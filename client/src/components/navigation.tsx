@@ -21,12 +21,12 @@ export default function Navigation() {
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-36">
           <div className="flex items-center">
             <img 
               src={logoImage}
               alt="Academic Excellence Masterclass Logo" 
-              className="h-16 w-auto logo-nav"
+              className="h-32 w-auto logo-nav"
               data-testid="logo-image"
             />
           </div>

@@ -30,7 +30,7 @@ export default function Footer() {
               <img 
                 src={logoImage}
                 alt="Academic Excellence Masterclass Logo" 
-                className="h-12 w-auto mr-3 logo-footer"
+                className="h-24 w-auto mr-3 logo-footer"
                 data-testid="logo-footer"
               />
               <span className="font-bold text-lg">Academic Excellence Masterclass</span>
