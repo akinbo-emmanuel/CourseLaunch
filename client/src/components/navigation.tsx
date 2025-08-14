@@ -105,7 +105,7 @@ export default function Navigation() {
             </button>
             <button
               onClick={handleRegistration}
-              className="bg-academic-blue-600 text-white px-6 py-2 rounded-lg hover:bg-academic-blue-700 transition-colors duration-200 font-semibold w-full"
+              className="bg-academic-blue-600 text-white px-6 py-3 rounded-lg hover:bg-academic-blue-700 transition-colors duration-200 font-semibold w-full"
               data-testid="button-register-mobile"
             >
               Register Now
