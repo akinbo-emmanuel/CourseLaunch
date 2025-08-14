@@ -1,4 +1,5 @@
 import { Medal, GraduationCap, Award, University, Globe, Calendar, Linkedin, Twitter, Instagram, Mail } from "lucide-react";
+import mentorImage from "@assets/WhatsApp Image 2025-08-09 at 15.39.51_1755153100108.jpeg";
 
 export default function InstructorSection() {
   const handleRegistration = () => {
@@ -33,9 +34,9 @@ export default function InstructorSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-in-up">
             <img 
-              src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=700&q=80" 
+              src={mentorImage} 
               alt="Professional portrait of Olajire Damilola Adedokun" 
-              className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
+              className="rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover"
               data-testid="img-instructor-photo"
             />
             
