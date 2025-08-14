@@ -14,7 +14,8 @@ const pages = [
     url: '/',
     lastmod: new Date().toISOString().split('T')[0],
     changefreq: 'daily',
-    priority: '1.0'
+    priority: '1.0',
+    title: "Home - Academic Excellence Masterclass"
   },
   {
     url: '/about',
@@ -66,7 +67,7 @@ function generateSitemap() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${pages.map(page => `
     <url>
-      <loc>${SITE_URL}${page.url}</loc>
+      <loc>${siteUrl}${page.url}</loc>
       <lastmod>${page.lastmod}</lastmod>
       <changefreq>${page.changefreq}</changefreq>
       <priority>${page.priority}</priority>
