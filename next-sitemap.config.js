@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
-module.exports = {
+export default {
   siteUrl: 'https://courselaunch.app',
   generateRobotsTxt: true,
   robotsTxtOptions: {
@@ -16,4 +16,4 @@ module.exports = {
   exclude: ['/server-sitemap.xml'],
   generateIndexSitemap: false,
   outDir: 'public',
-};
+}
