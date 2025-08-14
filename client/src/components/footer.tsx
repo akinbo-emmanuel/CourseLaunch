@@ -1,5 +1,5 @@
 import { Linkedin, Twitter, Instagram, Facebook, Mail, Phone, Clock } from "lucide-react";
-import logoImage from "@assets/generated_images/Academic_Excellence_Masterclass_Logo_397f94b9.png";
+import logoImage from "@assets/logo _1755149938176.jpg";
 
 export default function Footer() {
   const handleSocialLink = (platform: string) => {
@@ -30,7 +30,7 @@ export default function Footer() {
               <img 
                 src={logoImage}
                 alt="Academic Excellence Masterclass Logo" 
-                className="h-8 w-auto mr-3"
+                className="h-8 w-auto mr-3 logo-footer"
                 data-testid="logo-footer"
               />
               <span className="font-bold text-lg">Academic Excellence Masterclass</span>

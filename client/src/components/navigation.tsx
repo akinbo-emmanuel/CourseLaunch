@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoImage from "@assets/generated_images/Academic_Excellence_Masterclass_Logo_397f94b9.png";
+import logoImage from "@assets/logo _1755149938176.jpg";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,7 +26,7 @@ export default function Navigation() {
             <img 
               src={logoImage}
               alt="Academic Excellence Masterclass Logo" 
-              className="h-10 w-auto"
+              className="h-10 w-auto logo-nav"
               data-testid="logo-image"
             />
           </div>
