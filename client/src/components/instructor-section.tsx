@@ -36,7 +36,7 @@ export default function InstructorSection() {
             <img 
               src={mentorImage} 
               alt="Professional portrait of Olajire Damilola Adedokun" 
-              className="rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover"
+              className="rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover aspect-[3/4]"
               data-testid="img-instructor-photo"
             />
             
