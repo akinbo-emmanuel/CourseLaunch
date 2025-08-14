@@ -10,7 +10,7 @@ module.exports = {
     description: 'Discover the Academic Excellence Masterclass. Meet the mentor, explore testimonials, and register to unlock your academic potential.',
     images: [
       {
-        url: 'https://aem-course.vercel.app/og-image.jpg',
+        url: 'https://aem-course.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Academic Excellence Masterclass – Official Mentor Landing Page',
