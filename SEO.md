@@ -1,24 +1,28 @@
 # SEO Implementation Guide
 
-This document outlines the SEO improvements made to the CourseLaunch application and provides guidance for maintaining and enhancing SEO in the future.
+This document outlines the SEO improvements made to the Academic Excellence Masterclass application and provides guidance for maintaining and enhancing SEO in the future.
 
 ## Implemented SEO Features
 
 ### 1. Meta Tags and Open Graph
-- Added comprehensive meta tags for search engines
-- Implemented Open Graph tags for social media sharing
-- Added Twitter Card meta tags
-- Included viewport and theme-color meta tags
+- Comprehensive meta tags for search engines
+- Open Graph tags for social media sharing
+- Twitter Card meta tags
+- Viewport and theme-color meta tags
+- Canonical URL for duplicate content prevention
 
 ### 2. Sitemap
-- Created a dynamic sitemap generator script (`scripts/simple-sitemap.js`)
-- Configured sitemap generation to run on build
-- Added sitemap to `public/sitemap.xml`
+- Dynamic sitemap generator script (`scripts/generate-sitemap.js`)
+- Generates clean, standards-compliant XML sitemap
+- Includes all major site pages with proper priorities
+- Automatically updates last modified dates
+- Configured in `package.json` to run on build
 
 ### 3. robots.txt
-- Created a `robots.txt` file in the public directory
+- Located at `public/robots.txt`
 - Configured to allow all search engines to crawl the site
-- Added sitemap reference
+- References sitemap at `https://aem-course.vercel.app/sitemap.xml`
+- Includes commented examples for future restrictions if needed
 
 ### 4. Next.js SEO Configuration
 - Integrated `next-seo` for centralized SEO management

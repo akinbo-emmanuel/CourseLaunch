@@ -4,7 +4,7 @@
 // We'll create a custom sitemap generator in the build script
 // This is a placeholder configuration
 export const siteConfig = {
-  siteUrl: 'https://courselaunch.app',
+  siteUrl: 'https://aem-course.vercel.app',
   generateRobotsTxt: true,
   exclude: ['/server-sitemap.xml'],
   robotsTxtOptions: {
