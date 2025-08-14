@@ -1,25 +1,25 @@
 module.exports = {
-  title: 'CourseLaunch - Launch Your Online Course Successfully',
-  description: 'Transform your knowledge into a successful online course with CourseLaunch. Create, manage, and sell your courses with our powerful platform.',
+  title: 'Academic Excellence Masterclass – Official Mentor Landing Page',
+  description: 'Discover the Academic Excellence Masterclass. Meet the mentor, explore testimonials, and register to unlock your academic potential.',
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    url: 'https://courselaunch.app',
-    site_name: 'CourseLaunch',
-    title: 'CourseLaunch - Launch Your Online Course Successfully',
-    description: 'Transform your knowledge into a successful online course with CourseLaunch. Create, manage, and sell your courses with our powerful platform.',
+    url: 'https://aem-course.vercel.app',
+    site_name: 'Academic Excellence Masterclass',
+    title: 'Academic Excellence Masterclass – Official Mentor Landing Page',
+    description: 'Discover the Academic Excellence Masterclass. Meet the mentor, explore testimonials, and register to unlock your academic potential.',
     images: [
       {
-        url: 'https://courselaunch.app/og-image.jpg',
+        url: 'https://aem-course.vercel.app/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'CourseLaunch - Launch Your Online Course Successfully',
+        alt: 'Academic Excellence Masterclass – Official Mentor Landing Page',
       },
     ],
   },
   twitter: {
-    handle: '@courselaunch',
-    site: '@courselaunch',
+    handle: '@aemcourse',
+    site: '@aemcourse',
     cardType: 'summary_large_image',
   },
   additionalMetaTags: [
@@ -33,7 +33,7 @@ module.exports = {
     },
     {
       name: 'keywords',
-      content: 'online courses, course creation, e-learning, online teaching, course platform, sell courses',
+      content: 'academic excellence, masterclass, education, learning, online course, academic success, study skills, mentor, tutoring',
     },
   ],
   additionalLinkTags: [

@@ -5,18 +5,59 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Define your website URL
-const SITE_URL = 'https://courselaunch.app';
+// Define your site URL here
+const siteUrl = 'https://aem-course.vercel.app';
 
-// Define your pages
+// Define your pages here
 const pages = [
-  { url: '/', lastmod: new Date().toISOString().split('T')[0], changefreq: 'daily', priority: '1.0' },
-  { url: '/courses', lastmod: new Date().toISOString().split('T')[0], changefreq: 'daily', priority: '0.9' },
-  { url: '/pricing', lastmod: new Date().toISOString().split('T')[0], changefreq: 'monthly', priority: '0.8' },
-  { url: '/about', lastmod: new Date().toISOString().split('T')[0], changefreq: 'monthly', priority: '0.7' },
-  { url: '/contact', lastmod: new Date().toISOString().split('T')[0], changefreq: 'monthly', priority: '0.7' },
-  { url: '/login', lastmod: new Date().toISOString().split('T')[0], changefreq: 'monthly', priority: '0.5' },
-  { url: '/signup', lastmod: new Date().toISOString().split('T')[0], changefreq: 'monthly', priority: '0.5' },
+  {
+    url: '/',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'daily',
+    priority: '1.0'
+  },
+  {
+    url: '/about',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'weekly',
+    priority: '0.9',
+    title: 'About the Mentor - Academic Excellence Masterclass'
+  },
+  {
+    url: '/testimonials',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'weekly',
+    priority: '0.8',
+    title: 'Student Testimonials - Academic Excellence Masterclass'
+  },
+  {
+    url: '/curriculum',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'weekly',
+    priority: '0.8',
+    title: 'Course Curriculum - Academic Excellence Masterclass'
+  },
+  {
+    url: '/register',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'weekly',
+    priority: '0.7',
+    title: 'Register Now - Academic Excellence Masterclass'
+  },
+  {
+    url: '/faq',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'monthly',
+    priority: '0.5',
+    title: 'Frequently Asked Questions - Academic Excellence Masterclass'
+  },
+  {
+    url: '/contact',
+    lastmod: new Date().toISOString().split('T')[0],
+    changefreq: 'monthly',
+    priority: '0.5',
+    title: 'Contact Us - Academic Excellence Masterclass'
+  }
 ];
 
 // Generate sitemap XML
