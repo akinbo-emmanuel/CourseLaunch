@@ -71,9 +71,9 @@ export default function Navigation() {
               data-testid="button-mobile-menu"
             >
               {isMobileMenuOpen ? (
-                <X className="h-6 w-6" />
+                <X className="size-4" />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className="size-4" />
               )}
             </button>
           </div>
