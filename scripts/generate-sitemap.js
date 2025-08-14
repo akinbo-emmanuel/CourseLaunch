@@ -1,10 +1,15 @@
-const { writeFileSync } = require('fs');
-const { resolve } = require('path');
-const { SitemapStream, streamToPromise } = require('sitemap');
-const { createGzip } = require('zlib');
+import { writeFileSync } from 'fs';
+import { resolve } from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import { SitemapStream } from 'sitemap';
+
+// Get current directory in ES module
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // Define your website URL
-const SITE_URL = 'https://courselaunch.app';
+const SITE_URL = 'https://aem-course.vercel.app';
 
 // Define your pages
 const pages = [
@@ -20,44 +25,44 @@ const pages = [
 // Generate sitemap
 async function generateSitemap() {
   try {
-    const smStream = new SitemapStream({
-      hostname: SITE_URL,
-      xmlns: {
-        // XML namespaces
-        news: false,
-        xhtml: false,
-        image: false,
-        video: false,
-      },
-    });
-
-    const pipeline = smStream.pipe(createGzip());
-
+    let sitemap = '';
+    
+    // Create sitemap XML header
+    sitemap += '<?xml version="1.0" encoding="UTF-8"?>\n';
+    sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+    
     // Add each URL to the sitemap
     pages.forEach(page => {
-      smStream.write({
-        url: page.url,
-        changefreq: page.changefreq,
-        priority: page.priority,
-        lastmod: new Date().toISOString(),
-      });
+      sitemap += '  <url>\n';
+      sitemap += `    <loc>${SITE_URL}${page.url}</loc>\n`;
+      sitemap += `    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>\n`;
+      sitemap += `    <changefreq>${page.changefreq}</changefreq>\n`;
+      sitemap += `    <priority>${page.priority}</priority>\n`;
+      sitemap += '  </url>\n';
     });
-
-    smStream.end();
-
-    // Get the sitemap as a string
-    const sitemap = await streamToPromise(pipeline);
-
+    
+    // Close the urlset tag
+    sitemap += '</urlset>';
+    
     // Write the sitemap to the public directory
-    writeFileSync(
-      resolve(__dirname, '../client/public/sitemap.xml'),
-      sitemap.toString()
-    );
-
-    console.log('Sitemap generated successfully!');
+    const sitemapPath = resolve(__dirname, '../client/public/sitemap.xml');
+    
+    try {
+      writeFileSync(sitemapPath, sitemap);
+      console.log(`Sitemap generated successfully at: ${sitemapPath}`);
+      process.exit(0); // Exit with success code
+    } catch (writeError) {
+      console.error('Error writing sitemap file:', writeError);
+      process.exit(1); // Exit with error code
+    }
   } catch (error) {
     console.error('Error generating sitemap:', error);
+    process.exit(1); // Exit with error code
   }
 }
 
-generateSitemap();
+// Run the sitemap generation
+generateSitemap().catch(error => {
+  console.error('Unhandled error in sitemap generation:', error);
+  process.exit(1);
+});
