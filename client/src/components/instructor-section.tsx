@@ -19,13 +19,13 @@ export default function InstructorSection() {
   };
 
   return (
-    <section id="instructor" className="py-20 bg-white">
+    <section id="instructor" className="py-20 bg-gradient-to-br from-white to-academic-blue-50/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             Meet Your Mentor
           </h2>
-          <div className="w-24 h-1 bg-academic-blue-600 mx-auto mb-8"></div>
+          <div className="w-32 h-1.5 bg-gradient-to-r from-academic-blue-500 to-academic-blue-700 mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Learn from a scholar who has walked the path to academic excellence and is committed to guiding you to your own success.
           </p>

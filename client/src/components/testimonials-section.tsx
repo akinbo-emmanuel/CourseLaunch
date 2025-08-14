@@ -51,13 +51,13 @@ export default function TestimonialsSection() {
   const duplicatedTestimonials = [...testimonials, ...testimonials];
 
   return (
-    <section id="testimonials" className="py-20 bg-gray-50 overflow-hidden">
+    <section id="testimonials" className="py-20 bg-gradient-to-br from-gray-50 to-academic-blue-50/30 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 animate-fade-in-up">
+        <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 animate-fade-in-up">
           Success Stories from Our Students
         </h2>
-        <div className="w-24 h-1 bg-academic-blue-600 mx-auto mb-8"></div>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <div className="w-32 h-1.5 bg-gradient-to-r from-academic-blue-500 to-academic-blue-700 mx-auto mb-8 rounded-full"></div>
+        <p className="text-xl text-gray-700 max-w-4xl mx-auto font-light leading-relaxed">
           Over the past five months, students in our mentorship classes have experienced remarkable growth. 
           Here's what they have to say about their transformation.
         </p>
@@ -69,33 +69,33 @@ export default function TestimonialsSection() {
           {duplicatedTestimonials.map((testimonial, index) => (
             <div 
               key={`${testimonial.id}-${index}`}
-              className="flex-none w-80 bg-white rounded-xl shadow-lg p-6 border border-gray-100"
+              className="flex-none w-80 bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-academic-blue-100/30 p-6 flex flex-col h-64"
               data-testid={`testimonial-card-${testimonial.id}`}
             >
               <div className="flex items-center mb-4">
                 <div className="flex text-yellow-400">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-current" />
+                    <Star key={i} className="w-5 h-5 fill-current" />
                   ))}
                 </div>
               </div>
               
-              <p className="text-gray-600 mb-4 italic" data-testid={`text-testimonial-content-${testimonial.id}`}>
+              <p className="text-gray-700 mb-6 italic flex-1 text-sm leading-relaxed" data-testid={`text-testimonial-content-${testimonial.id}`}>
                 "{testimonial.content}"
               </p>
               
-              <div className="flex items-center">
+              <div className="flex items-center mt-auto">
                 <img 
                   src={testimonial.image}
                   alt={`${testimonial.name} testimonial photo`}
-                  className="w-12 h-12 rounded-full object-cover mr-4"
+                  className="w-12 h-12 rounded-full object-cover mr-4 ring-2 ring-academic-blue-200"
                   data-testid={`img-testimonial-${testimonial.id}`}
                 />
                 <div>
-                  <h4 className="font-semibold text-gray-900" data-testid={`text-testimonial-name-${testimonial.id}`}>
+                  <h4 className="font-bold text-gray-900 text-sm" data-testid={`text-testimonial-name-${testimonial.id}`}>
                     {testimonial.name}
                   </h4>
-                  <p className="text-sm text-gray-500" data-testid={`text-testimonial-program-${testimonial.id}`}>
+                  <p className="text-xs text-academic-blue-600 font-medium" data-testid={`text-testimonial-program-${testimonial.id}`}>
                     {testimonial.program}
                   </p>
                 </div>

@@ -6,13 +6,19 @@ export default function CTASection() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-academic-blue-600 to-academic-blue-800 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className="relative py-20 bg-gradient-to-br from-academic-blue-600 via-academic-blue-700 to-academic-blue-800 text-white overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-x-48 -translate-y-48"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl translate-x-48 translate-y-48"></div>
+      </div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            Your Journey to Academic Excellence Starts Here
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
+            Your Journey to Academic Excellence 
+            <span className="block text-white/90">Starts Here</span>
           </h2>
-          <p className="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+          <p className="text-xl sm:text-2xl lg:text-3xl mb-12 max-w-5xl mx-auto opacity-95 font-light leading-relaxed">
             Join our exclusive, closed-door mentorship program and take the first step towards your own success story. 
             Register today for personalized guidance that will transform your academic performance.
           </p>
@@ -44,19 +50,20 @@ export default function CTASection() {
             </div>
           </div>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+          <div className="flex flex-col items-center justify-center space-y-8">
             <button 
               onClick={handleRegistration}
-              className="bg-white text-academic-blue-600 px-10 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transform hover:scale-105 transition-all duration-200 shadow-xl"
+              className="group relative bg-white text-academic-blue-600 px-12 py-6 rounded-2xl text-2xl font-bold hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl overflow-hidden"
               data-testid="button-register-masterclass"
             >
-              <Edit className="w-5 h-5 mr-2 inline" />
-              Register for Masterclass
+              <div className="absolute inset-0 bg-gradient-to-r from-academic-blue-50/0 via-academic-blue-50/50 to-academic-blue-50/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              <Edit className="w-6 h-6 mr-3 inline relative z-10" />
+              <span className="relative z-10">Register for Masterclass</span>
             </button>
-            <p className="text-sm opacity-80" data-testid="text-limited-spots">
-              <Clock className="w-4 h-4 mr-1 inline" />
-              Limited spots available • Exclusive closed-door sessions
-            </p>
+            <div className="flex items-center space-x-4 text-white/90" data-testid="text-limited-spots">
+              <Clock className="w-5 h-5" />
+              <span className="text-lg font-medium">Limited spots available • Exclusive closed-door sessions</span>
+            </div>
           </div>
         </div>
       </div>
