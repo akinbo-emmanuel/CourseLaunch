@@ -20,10 +20,10 @@ export default function InstructorSection() {
   const handleSocialLink = (platform: string) => {
     // TODO: Replace with actual social media URLs
     const urls = {
-      linkedin: "https://linkedin.com/in/olajire-adedokun",
+      linkedin: "https://www.linkedin.com/in/olajire-adedokun-",
       twitter: "https://twitter.com/olajire_adedokun",
-      instagram: "https://instagram.com/olajire_adedokun",
-      email: "mailto:olajire@academicexcellence.com",
+      instagram: "https://instagram.com/adedokun_olajire",
+      email: "mailto:adedokun.olajire@gmail.com",
     };
 
     window.open(urls[platform as keyof typeof urls] || "#", "_blank");
