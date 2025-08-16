@@ -115,6 +115,16 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        // Move the track from -50% to 0% so items travel LEFT → RIGHT
+        "marquee-rtl": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+        // Optional: pause-friendly variant (same timing, just named)
+        "marquee-ltr": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -122,6 +132,8 @@ export default {
         "scroll-left": "scroll-left 30s linear infinite",
         "fade-in-up": "fade-in-up 0.6s ease-out",
         "fade-in": "fade-in 0.8s ease-out",
+        "marquee-rtl": "marquee-rtl 40s linear infinite",
+        "marquee-ltr": "marquee-ltr 40s linear infinite",
       },
     },
   },
