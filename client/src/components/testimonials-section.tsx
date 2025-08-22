@@ -21,38 +21,38 @@ const testimonials: Testimonial[] = [
   {
     id: 2,
     content:
-      "Academic Excellence Masterclass has been a means of inspiration to me. I get to learn unlearn and relearn a lot of things. Mr Ola is so intentional about our growth and makes sure that every meeting we leave  with something tangible. Sometimes when I feel like giving up, I hear Mr Ola's voice saying, 'Pay your dues. There is a price for greatness.' Things like that. He also helped me in my academic journey. My GPA was above 4.5 the last semester and this platform was a huge part of it.",
-    name: "Peace Chinechetam Azubuike",
-    program: "Bowen University",
+      "I once struggled academically until I met Mr. Olajire, who prayed, advised, and encouraged me. Despite his busy schedule, he excelled, inspiring me to do the same. Starting with a 2.35 GPA, I applied his guidance and graduated with a 4.0. I later held leadership roles and learned to balance everything. He always reminded me that one can serve God and still succeed. Challenges came, but I overcame. Grateful to Jesus and Mr. Olajire.",
+    name: "Edoba Emmanuel",
+    program: "Landmark University",
     image:
-      "https://lh3.googleusercontent.com/d/1vO6tNklHPsprsAbJ9gyKZh1Rs5XQYjFO",
+      "https://lh3.googleusercontent.com/d/1CZ-g00Bjlb1ExhAuAzDoaz7WT2oWB22p",
   },
   {
     id: 3,
     content:
-      "Attending AEM classes helped me become a first class student. We walked through topics that include; time management, beyond academics,Fear,academic success strategies, my favourite! balancing academic and spiritual life, to mention but a few. These armed me for the storms that came, enabling me to overcome strong.",
-    name: "Azubuike Blessing Chinemerem",
-    program: "Bowen University",
+      "I gained so much from the Academic Excellence Masterclass. I learned the value of time management, overcoming academic fears, and handling school challenges through prioritizing, self-assessment, and integrating spirituality. I realized I shouldn’t neglect time with God, even during exams. Planning ahead and being consistent are also key lessons. I’m grateful to God for the opportunity to attend and for the wisdom I now carry forward.",
+    name: "Shalom Osariemen Enabulele",
+    program: "University of Ibadan",
     image:
-      "https://lh3.googleusercontent.com/d/1cvVZIcGXvwTy_RoyYt3a0K4QGBxBHISd",
+      "https://lh3.googleusercontent.com/d/12BM2Ja-1uxbH_i5wTNLJ8S-8Ku3biG9N",
   },
   {
     id: 4,
-    content:
-      "He has been a good mentor. I know that I learnt a lot from him, even when I had not  gotten the gpa I wanted he encouraged me and just help me see where I needed to put in effort. He helped me realise that I took can do something different.",
-    name: "Faith Oluchukwu Ifenkwe",
-    program: "Bowen University",
-    image:
-      "https://lh3.googleusercontent.com/d/1LemMTmW380InW7WNpZz6cXsttLHwX9lz",
-  },
-  {
-    id: 5,
     content:
       "I learned that age is no barrier, and Mr. Olajire always guided me through challenges. During my second semester, I fell sick before an exam and feared missing it, but he encouraged me to seek treatment and still prepare. Remembering his words—“We can never fail”—gave me courage in the hall. My results improved drastically compared to my first semester. Mr. Olajire has truly been a blessing, and I pray God blesses him to impact more lives.",
     name: "Victoria Aluko",
     program: "Bowen University",
     image:
       "https://lh3.googleusercontent.com/d/1iQDmmWn9mcMbhRddmucsUkUd8TzLSkmd",
+  },
+  {
+    id: 5,
+    content:
+      "The group has actively shape my life speaking of Mr olajire, he has been like a mentor, helping students like me to come out with flying colours in their academic. Obviously if a student gets enroll under the mentor of such people,success is expected to boom in such people lives.",
+    name: "Olu-Akinola Gold Christianah",
+    program: "Adeleke University",
+    image:
+      "https://lh3.googleusercontent.com/d/1v7cst6rl4wfKW_vmvSnB04lOpScOfSy6",
   },
 ];
 
