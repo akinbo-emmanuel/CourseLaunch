@@ -49,11 +49,12 @@ export default function AboutSection() {
               data-testid="text-intro-message"
             >
               As the Lead Coach of Academic Excellence Masterclass, it is my
-              passion and commitment to help students unlock their full
-              potential and excel in their academic journey. Our organization
-              was founded with a clear purpose: to guide, coach, and mentor
-              students towards achieving excellence, not just in their grades,
-              but in their confidence, discipline, and lifelong learning skills.
+              passion and commitment to help students (Senior Secondary school,
+              Freshers and Undergraduates) unlock their full potential and excel
+              in their academic journey. Our organization was founded with a
+              clear purpose: to guide, coach, and mentor students towards
+              achieving excellence, not just in their grades, but in their
+              confidence, discipline, and lifelong learning skills.
             </p>
 
             <p className="text-sm md:text-base text-justify text-gray-600 mb-8 leading-relaxed">
