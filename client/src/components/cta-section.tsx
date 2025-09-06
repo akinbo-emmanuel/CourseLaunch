@@ -1,9 +1,10 @@
 import { GraduationCap, Trophy, Rocket, Edit, Clock } from "lucide-react";
 
 export default function CTASection() {
-  const handleRegistration = () => {
-    window.open("https://external-registration-page.com", "_blank");
-  };
+  // Registration is handled directly by the href in the anchor tag
+  // const handleRegistration = () => {
+  //   // Function kept for potential future use
+  // };
 
   return (
     <section className="relative py-20 bg-gradient-to-br from-academic-blue-600 via-academic-blue-700 to-academic-blue-800 text-white overflow-hidden">
@@ -63,9 +64,8 @@ export default function CTASection() {
           </div>
 
           <div className="flex flex-col items-center justify-center space-y-8">
-            <a href="https://selar.com/aem" target="_blank">
+            <a href="https://selar.com/aem" target="_blank" rel="noopener noreferrer">
               <button
-                onClick={handleRegistration}
                 className="group relative bg-white text-academic-blue-600 px-6 md:px-8 py-5 md:py-6 rounded-2xl text-2xl font-bold hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl overflow-hidden flex items-center gap-2"
                 data-testid="button-register-masterclass"
               >

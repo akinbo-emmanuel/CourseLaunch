@@ -1,9 +1,10 @@
 import { ExternalLink, Target, TrendingUp } from "lucide-react";
 
 export default function AboutSection() {
-  const handleRegistration = () => {
-    window.open("https://external-registration-page.com", "_blank");
-  };
+  // Registration is handled directly by the href in the anchor tag
+  // const handleRegistration = () => {
+  //   // Function kept for potential future use
+  // };
 
   const perks = [
     {
@@ -83,9 +84,8 @@ export default function AboutSection() {
               ))}
             </div>
 
-            <a href="https://selar.com/aem" target="_blank">
+            <a href="https://selar.com/aem" target="_blank" rel="noopener noreferrer">
               <button
-                onClick={handleRegistration}
                 className="group relative bg-gradient-to-r from-academic-blue-600 to-academic-blue-700 text-white px-4 md:px-10 py-5 rounded-xl text-sm md:text-base font-bold hover:from-academic-blue-700 hover:to-academic-blue-800 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl overflow-hidden flex items-center gap-2"
                 data-testid="button-join-masterclass"
               >
