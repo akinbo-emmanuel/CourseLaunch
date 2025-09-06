@@ -204,7 +204,7 @@ export default function InstructorSection() {
               I am the mentor who can help you get there."
             </blockquote>
 
-            <button
+            {/* <button
               onClick={handleRegistration}
               className="group relative bg-gradient-to-r from-academic-blue-600 to-academic-blue-700 text-white px-4 md:px-10 py-5 rounded-xl text-sm md:text-base font-bold hover:from-academic-blue-700 hover:to-academic-blue-800 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl overflow-hidden flex items-center gap-2"
               data-testid="button-book-mentorship"
@@ -212,7 +212,7 @@ export default function InstructorSection() {
               <Calendar className="size-4 mr-2 inline" />
               Book Your Mentorship Session
               <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-xl"></div>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
