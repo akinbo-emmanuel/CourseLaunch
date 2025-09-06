@@ -15,7 +15,7 @@ export default function Footer() {
     const urls = {
       linkedin: "https://linkedin.com/in/academicexcellence",
       twitter: "https://twitter.com/academicexcellence",
-      instagram: "https://instagram.com/aem_masterclass",
+      instagram: "https://instagram.com/ae_masterclass",
       facebook: "https://facebook.com/academicexcellence",
     };
 

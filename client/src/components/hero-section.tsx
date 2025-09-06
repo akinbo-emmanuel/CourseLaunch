@@ -117,15 +117,17 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-5 mb-14">
-            <button
-              onClick={handleRegistration}
-              className="group relative bg-gradient-to-r from-academic-blue-600 to-academic-blue-700 text-white px-4 md:px-10 py-5 rounded-[12px] text-sm md:text-base font-bold hover:from-academic-blue-700 hover:to-academic-blue-800 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl overflow-hidden flex items-center gap-2"
-              data-testid="button-start-success-story"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-              <GraduationCap className="size-4 inline" />
-              Start Your Success Story
-            </button>
+            <a href="https://selar.com/aem" target="_blank">
+              <button
+                onClick={handleRegistration}
+                className="group relative bg-gradient-to-r from-academic-blue-600 to-academic-blue-700 text-white px-4 md:px-10 py-5 rounded-[12px] text-sm md:text-base font-bold hover:from-academic-blue-700 hover:to-academic-blue-800 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl overflow-hidden flex items-center gap-2"
+                data-testid="button-start-success-story"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                <GraduationCap className="size-4 inline" />
+                Start Your Success Story
+              </button>
+            </a>
             <button
               onClick={scrollToInstructor}
               className="group text-academic-blue-600 hover:text-academic-blue-700 font-bold text-sm md:text-base transition-all duration-300 flex items-center gap-2"

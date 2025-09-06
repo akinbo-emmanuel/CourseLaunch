@@ -33,7 +33,9 @@ export default function CTASection() {
               <div className="bg-white/10 size-14 md:size-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <GraduationCap className="size-5 md:size-6" />
               </div>
-              <h3 className="font-semibold mb-2 text-sm">Personalized Coaching</h3>
+              <h3 className="font-semibold mb-2 text-sm">
+                Personalized Coaching
+              </h3>
               <p className="text-xs opacity-80">
                 Tailored strategies for your unique learning style and goals
               </p>
@@ -61,15 +63,19 @@ export default function CTASection() {
           </div>
 
           <div className="flex flex-col items-center justify-center space-y-8">
-            <button
-              onClick={handleRegistration}
-              className="group relative bg-white text-academic-blue-600 px-6 md:px-8 py-5 md:py-6 rounded-2xl text-2xl font-bold hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl overflow-hidden flex items-center gap-2"
-              data-testid="button-register-masterclass"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-academic-blue-50/0 via-academic-blue-50/50 to-academic-blue-50/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-              <Edit className="size-4 relative z-10" />
-              <span className="relative z-10 text-sm md:text-base">Register for Masterclass</span>
-            </button>
+            <a href="https://selar.com/aem" target="_blank">
+              <button
+                onClick={handleRegistration}
+                className="group relative bg-white text-academic-blue-600 px-6 md:px-8 py-5 md:py-6 rounded-2xl text-2xl font-bold hover:bg-gray-50 transform hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-3xl overflow-hidden flex items-center gap-2"
+                data-testid="button-register-masterclass"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-academic-blue-50/0 via-academic-blue-50/50 to-academic-blue-50/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                <Edit className="size-4 relative z-10" />
+                <span className="relative z-10 text-sm md:text-base">
+                  Register for Masterclass
+                </span>
+              </button>
+            </a>
             <div
               className="flex items-center space-x-2 text-white/90"
               data-testid="text-limited-spots"
